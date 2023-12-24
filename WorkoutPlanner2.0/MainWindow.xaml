@@ -1,0 +1,25 @@
+﻿<Window x:Class="WorkoutPlanner2._0.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WorkoutPlanner2._0"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="lblTitle" Content="Workout Planner" HorizontalAlignment="Left" Margin="94,27,0,0" VerticalAlignment="Top" FontFamily="ROG Fonts" FontSize="48" Foreground="#FF848484">
+            <Label.Style>
+                <Style/>
+            </Label.Style>
+        </Label>
+        <Button x:Name="btnPull" Content="Pull" HorizontalAlignment="Left" Height="118" Margin="94,251,0,0" VerticalAlignment="Top" Width="155" Background="White" FontSize="24" FontFamily="ROG Fonts" Click="btnPull_Click" Foreground="Red"/>
+        <Button x:Name="btnPush" Content="Push" HorizontalAlignment="Center" Height="118" Margin="0,251,0,0" VerticalAlignment="Top" Width="156" Background="White" FontSize="24" FontFamily="ROG Fonts" Foreground="#FF37FF00" Click="btnPush_Click"/>
+        <Button x:Name="btnLegs" Content="Legs" HorizontalAlignment="Left" Height="118" Margin="553,251,0,0" VerticalAlignment="Top" Width="155" Background="White" FontSize="24" FontFamily="ROG Fonts" Foreground="#FF1300FF" Click="btnLegs_Click"/>
+        <Label x:Name="lblDesc" Content="What muscle group are you hitting today?" HorizontalAlignment="Center" Height="26" Margin="0,158,0,0" VerticalAlignment="Top" Width="385" FontFamily="ROG Fonts"/>
+
+    </Grid>
+</Window>

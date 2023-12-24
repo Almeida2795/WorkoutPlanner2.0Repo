@@ -1,0 +1,88 @@
+﻿<Window x:Class="WorkoutPlanner2._0.AddWorkout"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WorkoutPlanner2._0"
+        mc:Ignorable="d"
+        Title="AddWorkout" Height="439" Width="1042">
+    <Grid Margin="0,0,0,-6">
+        <Label x:Name="lblTitle" Content="Add Workout" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="ROG Fonts" FontSize="48" Foreground="#FF848484" BorderBrush="Black" Background="{x:Null}"/>
+        <Label x:Name="lblEx1" Content="Exercise 1" HorizontalAlignment="Left" Margin="25,98,0,0" VerticalAlignment="Top" Width="150" FontSize="18" FontFamily="ROG Fonts" Background="White" Foreground="Black"/>
+        <Label x:Name="lblEx2" Content="Exercise 2" HorizontalAlignment="Left" Margin="241,98,0,0" VerticalAlignment="Top" Width="150" FontSize="18" FontFamily="ROG Fonts" Background="White" Foreground="Black"/>
+        <Label x:Name="lblEx3" Content="Exercise 3" HorizontalAlignment="Center" Margin="0,98,0,0" VerticalAlignment="Top" Width="150" FontSize="18" FontFamily="ROG Fonts" Background="White" Foreground="Black"/>
+        <Label x:Name="lblEx4" Content="Exercise 4" HorizontalAlignment="Left" Margin="654,98,0,0" VerticalAlignment="Top" Width="150" FontSize="18" FontFamily="ROG Fonts" Background="White" Foreground="Black"/>
+        <Label x:Name="lblEx5" Content="Exercise 5" HorizontalAlignment="Left" Margin="871,98,0,0" VerticalAlignment="Top" Width="150" FontSize="18" FontFamily="ROG Fonts" Background="White" Foreground="Black"/>
+
+        <TextBox x:Name="txtP1S1" HorizontalAlignment="Left" Height="26" Margin="25,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Text="Example: 15KG x 12"/>
+        <TextBox x:Name="txtP1S2" HorizontalAlignment="Left" Height="26" Margin="25,205,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Text="17Kg x 10"/>
+        <TextBox x:Name="txtP1S3" HorizontalAlignment="Left" Height="26" Margin="25,240,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Text="20Kg x 8"/>
+        <TextBox x:Name="txtP1S4" HorizontalAlignment="Left" Height="36" Margin="25,276,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Text="Click Clear to clear the example"/>
+        <TextBox x:Name="txtP2S1" HorizontalAlignment="Left" Height="26" Margin="238,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
+        <TextBox x:Name="txtP2S2" HorizontalAlignment="Left" Height="26" Margin="238,205,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
+        <TextBox x:Name="txtP2S3" HorizontalAlignment="Left" Height="26" Margin="238,240,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
+        <TextBox x:Name="txtP2S4" HorizontalAlignment="Left" Height="26" Margin="238,276,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
+        <TextBox x:Name="txtP3S1" HorizontalAlignment="Left" Height="26" Margin="448,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
+        <TextBox x:Name="txtP3S2" HorizontalAlignment="Left" Height="26" Margin="448,205,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
+        <TextBox x:Name="txtP3S3" HorizontalAlignment="Left" Height="26" Margin="448,240,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
+        <TextBox x:Name="txtP3S4" HorizontalAlignment="Left" Height="26" Margin="448,276,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
+        <TextBox x:Name="txtP4S1" HorizontalAlignment="Left" Height="26" Margin="655,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
+        <TextBox x:Name="txtP4S2" HorizontalAlignment="Left" Height="26" Margin="655,205,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
+        <TextBox x:Name="txtP4S3" HorizontalAlignment="Left" Height="26" Margin="655,240,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
+        <TextBox x:Name="txtP4S4" HorizontalAlignment="Left" Height="26" Margin="655,276,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
+        <TextBox x:Name="txtP5S1" HorizontalAlignment="Left" Height="26" Margin="872,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
+        <TextBox x:Name="txtP5S2" HorizontalAlignment="Left" Height="26" Margin="872,205,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
+        <TextBox x:Name="txtP5S3" HorizontalAlignment="Left" Height="26" Margin="872,240,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
+        <TextBox x:Name="txtP5S4" HorizontalAlignment="Left" Height="26" Margin="872,276,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
+        <Label x:Name="lblDay" Content="Day" HorizontalAlignment="Left" Height="36" Margin="17,10,0,0" VerticalAlignment="Top" Width="68" FontFamily="ROG Fonts" FontSize="14"/>
+        <Label x:Name="lblMonth" Content="Month" HorizontalAlignment="Left" Height="36" Margin="17,39,0,0" VerticalAlignment="Top" Width="82" FontFamily="ROG Fonts" FontSize="14"/>
+        <ComboBox x:Name="cbEx1" HorizontalAlignment="Left" Margin="25,135,0,0" VerticalAlignment="Top" Width="150" BorderBrush="White">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1">
+                    <GradientStop Color="#FFF0F0F0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+        </ComboBox>
+
+        <ComboBox x:Name="cbEx3" HorizontalAlignment="Center" Margin="0,135,0,0" VerticalAlignment="Top" Width="150" BorderBrush="White">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1">
+                    <GradientStop Color="#FFF0F0F0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+        </ComboBox>
+        <ComboBox x:Name="cbEx2" HorizontalAlignment="Left" Margin="241,135,0,0" VerticalAlignment="Top" Width="150" BorderBrush="White">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1">
+                    <GradientStop Color="#FFF0F0F0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+        </ComboBox>
+        <ComboBox x:Name="cbEx4" HorizontalAlignment="Left" Margin="654,135,0,0" VerticalAlignment="Top" Width="150" BorderBrush="White">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1">
+                    <GradientStop Color="#FFF0F0F0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+        </ComboBox>
+        <ComboBox x:Name="cbEx5" HorizontalAlignment="Left" Margin="871,135,0,0" VerticalAlignment="Top" Width="150" BorderBrush="White">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1">
+                    <GradientStop Color="#FFF0F0F0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+        </ComboBox>
+        <ComboBox x:Name="cbDay" HorizontalAlignment="Left" Height="29" Margin="104,8,0,0" VerticalAlignment="Top" Width="58"/>
+        <ComboBox x:Name="cbMonth" HorizontalAlignment="Left" Height="29" Margin="104,39,0,0" VerticalAlignment="Top" Width="58"/>
+        <Button x:Name="btnAddEx" Content="Add Exercise" HorizontalAlignment="Left" Height="24" Margin="872,22,0,0" VerticalAlignment="Top" Width="149" BorderBrush="Black" FontFamily="ROG Fonts" Click="btnAddEx_Click"/>
+        <Button x:Name="btnDeleteEx" Content="Delete Exercise" HorizontalAlignment="Left" Height="24" Margin="872,51,0,0" VerticalAlignment="Top" Width="149" BorderBrush="Black" FontFamily="ROG Fonts" Click="btnDeleteEx_Click"/>
+        <Button x:Name="btnAddWorkout" Content="Add Workout" HorizontalAlignment="Center" Height="24" Margin="0,345,0,0" VerticalAlignment="Top" Width="149" BorderBrush="Black" FontFamily="ROG Fonts" Click="btnAddWorkout_Click"/>
+        <Button x:Name="btnClear" Content="Clear" HorizontalAlignment="Left" Height="24" Margin="871,345,0,0" VerticalAlignment="Top" Width="149" BorderBrush="Black" FontFamily="ROG Fonts" Click="btnClear_Click"/>
+        <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Left" Height="24" Margin="871,374,0,0" VerticalAlignment="Top" Width="149" BorderBrush="Black" FontFamily="ROG Fonts" Click="btnBack_Click"/>
+    </Grid>
+</Window>

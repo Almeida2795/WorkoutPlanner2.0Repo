@@ -1,0 +1,15 @@
+﻿<Window x:Class="WorkoutPlanner2._0.DeleteExercisePage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WorkoutPlanner2._0"
+        mc:Ignorable="d"
+        Title="DeleteExercisePage" Height="298" Width="726">
+    <Grid>
+        <Label x:Name="lblTitle" Content="Add Workout" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="ROG Fonts" FontSize="48" Foreground="#FF848484" BorderBrush="Black" Background="{x:Null}"/>
+        <ComboBox x:Name="cbExs" HorizontalAlignment="Center" Height="30" Margin="0,111,0,0" VerticalAlignment="Top" Width="271"/>
+        <Button x:Name="btnDeleteEx" Content="Delete Exercise" HorizontalAlignment="Center" Height="24" Margin="0,174,0,0" VerticalAlignment="Top" Width="150" BorderBrush="Black" FontFamily="ROG Fonts" Click="btnDeleteEx_Click"/>
+        <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Center" Height="24" Margin="0,219,0,0" VerticalAlignment="Top" Width="150" BorderBrush="Black" FontFamily="ROG Fonts" Click="btnBack_Click"/>
+    </Grid>
+</Window>

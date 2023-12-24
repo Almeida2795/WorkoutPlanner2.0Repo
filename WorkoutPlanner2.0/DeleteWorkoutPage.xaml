@@ -1,0 +1,17 @@
+﻿<Window x:Class="WorkoutPlanner2._0.DeleteWorkoutPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WorkoutPlanner2._0"
+        mc:Ignorable="d"
+        Title="DeleteWorkoutPage" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="lblTitle" Content="Add Workout" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="ROG Fonts" FontSize="48" Foreground="#FF848484" BorderBrush="Black" Background="{x:Null}"/>
+        <ComboBox x:Name="cbDates" HorizontalAlignment="Center" Height="32" Margin="0,131,0,0" VerticalAlignment="Top" Width="304" SelectionChanged="cbDate_SelectionChanged"/>
+        <DataGrid x:Name="dgSelected" HorizontalAlignment="Center" Height="44" Margin="0,191,0,0" VerticalAlignment="Top" Width="780" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Center" Height="27" Margin="0,277,0,0" VerticalAlignment="Top" Width="304" BorderBrush="Black" FontFamily="ROG Fonts" Click="btnDelete_Click"/>
+        <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Center" Height="27" Margin="0,322,0,0" VerticalAlignment="Top" Width="304" BorderBrush="Black" FontFamily="ROG Fonts" Click="btnBack_Click"/>
+
+    </Grid>
+</Window>
